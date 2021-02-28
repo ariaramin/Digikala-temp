@@ -1,0 +1,145 @@
+@font-face{
+    font-family: 'iransans';
+    src: url('../font/FontsFree-Net-ir_sans.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'iransans';
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+}
+
+.underline{
+    position: absolute;
+    background: #dc143c;
+    height: 3px;
+    z-index: 111111;
+    transition: .2s linear;
+}
+
+@keyframes zoom{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes zoomout{
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0);
+    }
+}
+
+.cart{
+    padding: 0 10px;
+    border-right: 1px solid #e0e0e2;
+    margin-right: 15px;
+}
+
+.cart .btn{
+    padding: 0;
+    font-size: 1.2rem;
+    color: #616161;
+}
+
+.login .btn{
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+    font-size: .8rem;
+    padding: 10px 12px;
+    line-height: 1.8;
+    color: #616161;
+    border: 1px solid #e0e0e2;;
+    border-radius: 7px;
+}
+
+.login .btn span{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.right-side{
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 56%;
+    border-radius: 6px;
+    margin: 0 30px;
+    background: #e0e0e2;
+}
+
+.search input{
+    background: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.search span{
+    margin: 0 10px;
+    font-size: 1.3rem;
+    color: #616161;
+}
+
+.menu{
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #ffff;
+    z-index: 111;
+    padding: 0;
+}
+
+.menu .nav-item{
+    margin: 0 5px;
+    font-size: .7rem;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+
+.banner-top{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.left-side img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
