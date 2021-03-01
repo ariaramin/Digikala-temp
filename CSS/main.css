@@ -121,7 +121,7 @@ a{
 }
 
 .main{
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 
@@ -155,7 +155,9 @@ a{
     color: #ffffff;
 }
 
-
+.swiper-slide{
+    margin: 0;
+}
 
 .product-price .discount span:nth-child(1){
     text-decoration: line-through;
@@ -176,4 +178,8 @@ a{
 
 .product-card .discount-countdown{
     color: #616161;
+}
+
+.advertisement img{
+    border-radius: 15px;
 }
