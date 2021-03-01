@@ -10,6 +10,10 @@
     font-family: 'iransans';
 }
 
+a{
+    text-decoration: none;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -21,7 +25,7 @@
 .underline{
     position: absolute;
     background: #dc143c;
-    height: 3px;
+    height: 2px;
     z-index: 111111;
     transition: .2s linear;
 }
@@ -133,7 +137,7 @@
     border-radius: 15px;
 }
 
-.swiper-container{
+.main .swiper-container{
     width: 100%;
     height: 100%;
 }
@@ -142,4 +146,34 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.banner .btn{
+    padding: 7px 10px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+.product-price .discount span:nth-child(1){
+    text-decoration: line-through;
+    color: #616161;
+}
+
+.product-price .discount .discount-percent{
+    background: #dc143c;
+    padding: 0 10px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.product-price .price span:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.product-card .discount-countdown{
+    color: #616161;
 }
