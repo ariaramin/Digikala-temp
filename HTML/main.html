@@ -120,7 +120,7 @@
             </div>
 
             <div class="col-8">
-                <div class="swiper-container">
+                <div class="swiper-container auto">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -390,12 +390,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--arrows-->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
                 </div>
+
+                <!--arrows-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="col-2 text-center">
                 <a href="" class="banner">
@@ -651,12 +650,11 @@
                             </div>
                         </div>
                     </div>
-
-                    <!--arrows-->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-
                 </div>
+
+                <!--arrows-->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div class="col-2 text-center">
                 <a href="" class="banner">
@@ -685,14 +683,39 @@
         </div>
     </section>
 
+    <section class="footer container">
+        <div class="row">
+            <div class="features">
+                <div class="col-3 feature-item justify-content-center">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.auto', {
           spaceBetween: 30,
           centeredSlides: true,
           autoplay: {
             delay: 2500,
             disableOnInteraction: false,
           },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
