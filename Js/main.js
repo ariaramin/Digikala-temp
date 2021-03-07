@@ -1,4 +1,4 @@
-let links = document.querySelectorAll(".nav-link");
+let links = document.querySelectorAll("header .nav-link");
 let span = document.createElement("span");
 
 links.forEach(link => {
@@ -15,8 +15,7 @@ function underline(){
     document.body.appendChild(span);
     let linkstyle = this.getBoundingClientRect();
     span.style.width = `${linkstyle.width}px`;
-    span.style.top = `${linkstyle.bottom}px`;
-    span.style.left = `${linkstyle.left}px`;
+    span.style.transform = `translate(${linkstyle.left}px, ${linkstyle.top + window.scrollY}px)`
 }
 
 
