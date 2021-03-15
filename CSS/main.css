@@ -25,28 +25,11 @@ a{
 .underline{
     position: absolute;
     background: #dc143c;
-    height: 2px;
+    height: 3px;
     z-index: 111111;
-    transition: .2s linear;
+    transition: all .2s linear;
 }
 
-@keyframes zoom{
-    from{
-        transform: scaleX(0);
-    }
-    to{
-        transform: scaleX(1);
-    }
-}
-
-@keyframes zoomout{
-    from{
-        transform: scaleX(1);
-    }
-    to{
-        transform: scaleX(0);
-    }
-}
 
 .cart{
     padding: 0 10px;
@@ -111,8 +94,9 @@ a{
     right: 0;
     left: 0;
     background: #ffff;
-    z-index: 111;
+    z-index: -11;
     padding: 0;
+    transition: .3s ease;
 }
 
 .menu .nav-item{
@@ -200,7 +184,13 @@ a{
     font-size: .8rem;
 }
 
-.footer .news{
+.footer .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer .contact .news{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,6 +201,6 @@ a{
     color: #616161;
 }
 
-.footer .col-6 ul{
+.footer ul li{
     font-size: .8rem;
 }
