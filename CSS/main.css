@@ -168,6 +168,30 @@ a{
     width: 100%;
 }
 
+.products .title h5{
+    position: relative;
+    display: inline-block;
+}
+
+.products .title h5::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    width: 130%;
+    height: 1px;
+    background: #dc143c;
+}
+
+.products .card{
+    border: none;
+}
+
+.products .card .price span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .footer{
     background: #e0e0e2;
 }
