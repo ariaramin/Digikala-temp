@@ -81,6 +81,7 @@ a{
     border: none;
     outline: none;
     padding: 10px;
+    font-size: 1rem;
 }
 
 .search span{
@@ -185,6 +186,10 @@ a{
 
 .products .card{
     border: none;
+}
+
+.products .card small{
+    font-size: .8rem;
 }
 
 .products .card .price span{
