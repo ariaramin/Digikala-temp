@@ -39,8 +39,12 @@ a{
 
 .cart .btn{
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #616161;
+}
+
+.card .btn:last-child{
+    font-size: .7rem;
 }
 
 .login .btn{
